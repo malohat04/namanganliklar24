@@ -1,0 +1,186 @@
+/*Table of contents*/ 
+/*FONTS*/
+/*1. FONTS*/
+/*2. GENERAL STYLES*/
+/*3. CONTAINER*/
+/*4. SITE-HEADER*/
+/*5. LOGO*/
+/*6. EXCHANGE-RATES*/
+/*7. SEARCH-BUTTON*/
+/*8. LANGUAGE-TOGGLER*/
+/*9. TELEGRAM-SUB*/
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../webfonts/Rubik/Rubik-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../webfonts/Rubik/Rubik-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../webfonts/Rubik/Rubik-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../webfonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("../webfonts/Roboto/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../webfonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: url("../webfonts/Roboto/Roboto-Regular.ttf");
+}
+/*GENERAL STYLES*/
+html {
+box-sizing: border-box;
+height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing:inherit;
+}
+body {
+    height: 100%;
+    font-family: "Rubik", Arial, sans-serif;
+    font-family: Rubik;
+    font-size: 15px;
+    line-height: 18px;
+    color: #434343;
+}
+/*CONTAINER*/
+.container {
+max-width: 1240px;
+padding: 0 20px;
+margin: 0 auto;
+}
+/*SITE-HEADER*/
+.site-header {
+    padding-top: 40px;
+    padding-bottom: 23px;
+    border-top: 4px solid #295093;
+    background-color:#F6F6F9;
+}
+.site-header__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.site-header__exchange-rates {
+    margin-right: 17px;
+}
+.site-header__actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.site-header__search-button {
+    margin-right: 22px;
+}
+.site-header__language-toggler {
+    margin-right: 24px;
+}
+/*LOGO*/
+.logo{
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+}
+/* EXCHANGE-RATES*/
+.exchange-rates {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #7A7A7A;
+}
+.exchange-rates__item {
+    margin-right: 26px;
+}
+
+.exchange-rates__icon {
+    color: #285193;
+}
+
+/* SEARCH-BUTTON*/
+.search-button {
+    padding: 8px;
+    border: none;
+    
+    background-color: white;
+    border-radius: 5px;
+}
+/*LANGUAGE-TOGGLER*/
+.language-toggler {
+    padding: 10px;
+    border: none;
+  
+    background-color: white;
+    border-radius: 5px;
+}
+/*TELEGRAM-SUB*/
+.telegram-sub {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color:#fff; 
+    background-color: #212e33;
+    background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%); 
+    text-decoration: none;
+    transition: bagkr;
+}
+
+.telegram-sub:hover {
+    background-image: linear-gradient(90deg, #37AEE2  15.07%, #1E96C8 85.96%); 
+}
+
+.telegram-sub__img {
+margin-right: 7px;
+}
+.telegram-sub__text {
+    font-weight: 500;
+}

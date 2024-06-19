@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namanganliklar24 - yangiliklar sayti </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namanganliklar24 - yangiliklar sayti </title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <a href="index.html">
-        <img src="img/logo.svg" alt="namanganliklar24 logo" width="303" height="33">
-    </a>
-    <ul>
-        <li><b>&dollar;</b> <span>10137.2</span></li>
-        <li><b>P</b> <span>138.26</span></li>
-        <li><b>&euro;</b> <span>10988.72</span></li>
-    </ul>
-    <div>
-        <button type="button">
-            <img src="img/mdi_magnify.svg" alt="ikonka lupi" width="24" height="24">
-        </button>
-        <button type="button">
-            <img src="img/cif_ru.svg" alt="ikonka flag Rossii" width="20" height="20">
-            <span>РУ</span>
-        </button>
-        <a href="https://tme.to/mayoquz" target="_blank">
-            <img src="img/cib_telegram@2x.svg" alt="logo mesenjera Telegram" width="20" height="20">
-            <span>Подписатся</span>
+
+<body class="page__body">
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__top">
+        <a class="logo" href="index.html">
+          <img class="logo_img" src="img/logo.svg" alt="namanganliklar24 logo" width="303" height="33">
         </a>
-
+        <ul class="site-header__exchange-rates exchange-rates">
+          <li class="exchange-rates__item"><b class="exchange-rates__icon">&dollar;</b> <span
+              class="exchange-rates__value">10137.2</span></li>
+          <li class="exchange-rates__item"><b class="exchange-rates__icon">P</b> <span
+              class="exchange-rates__value">138.26</span></li>
+          <li class="exchange-rates__item"><b class="exchange-rates__icon">&euro;</b> <span
+              class="exchange-rates__value">10988.72</span></li>
+        </ul>
+        <div class="site-header__actions">
+          <button class="site-header__search-button search-button" type="button">
+            <img class="search-button__img" src="img/mdi_magnify.svg" alt="ikonka lupi" width="24" height="24">
+          </button>
+          <button class="site-header__language-toggler language-toggler" type="button">
+            <img class="language-toggler__img" src="img/cif_ru.svg" alt="ikonka flag Rossii" width="20" height="20">
+            <span class="language-togger__text">РУ</span>
+          </button>
+          <a class="telegram-sub" href="https://tme.to/mayoquz" target="_blank">
+            <img class="telegram-sub__img" src="img/cib_telegram@2x.svg" alt="logo mesenjera Telegram" width="20"
+              height="20">
+            <span class="telegram-sub__text">Подписатся</span>
+          </a>
+        </div><!--site-header__actions-->
+      </div>
     </div>
+    <!-- site-header__top -->
+    </div><!-- container -->
+  </header>
 
-    <script srs="js/main.js"></script>
+  <script srs="js/main.js"></script>
 </body>
+
 </html>
