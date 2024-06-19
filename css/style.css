@@ -103,6 +103,9 @@ margin: 0 auto;
     font-size: 16px;
     line-height: 19px;
 }
+.site-header__logo {
+margin-right: 17px;
+}
 
 .site-header__exchange-rates {
     margin-right: 17px;
@@ -119,7 +122,6 @@ margin: 0 auto;
 .site-header__language-toggler {
     margin-right: 24px;
 }
-/*LOGO*/
 .logo{
     display: flex;
     padding: 4px 8px;
@@ -146,20 +148,36 @@ margin: 0 auto;
 }
 
 /* SEARCH-BUTTON*/
-.search-button {
-    padding: 8px;
-    border: none;
-    
+.search-button { 
+    padding: 0;
+    border: none;    
     background-color: white;
     border-radius: 5px;
+}
+.search-button__wrapper {
+     padding: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 /*LANGUAGE-TOGGLER*/
 .language-toggler {
     padding: 10px;
-    border: none;
-  
+    border: none; 
     background-color: white;
     border-radius: 5px;
+}
+
+.language-toggler__wrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.language-toggler__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
 }
 /*TELEGRAM-SUB*/
 .telegram-sub {
@@ -171,7 +189,6 @@ margin: 0 auto;
     background-color: #212e33;
     background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%); 
     text-decoration: none;
-    transition: bagkr;
 }
 
 .telegram-sub:hover {
