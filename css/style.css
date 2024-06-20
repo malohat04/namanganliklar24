@@ -9,6 +9,8 @@
 /*7. SEARCH-BUTTON*/
 /*8. LANGUAGE-TOGGLER*/
 /*9. TELEGRAM-SUB*/
+/*10. SITENAV*/
+/*11. TOP-BANNER*/
 
 @font-face {
     font-family: "Rubik";
@@ -100,6 +102,7 @@ margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 40px;
     font-size: 16px;
     line-height: 19px;
 }
@@ -162,6 +165,7 @@ margin-right: 17px;
     border: none;    
     background-color: white;
     border-radius: 5px;
+    cursor: pointer;
     transition: box-shadow 0.3s ease;
 }
 .search-button__wrapper {
@@ -177,6 +181,7 @@ margin-right: 17px;
     background-color: white;
     border-radius: 5px;
     transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 
@@ -223,3 +228,43 @@ margin-right: 7px;
 .telegram-sub__text {
     font-weight: 500;
 }
+
+/* SITENAV*/
+.sitenav {
+    margin-bottom: 18px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+}
+.sitenav__list {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 12px;
+    margin: 0;
+    list-style-type: none;
+}
+.sitenav__item {
+    margin:5px 12px ;
+}
+
+.sitenav__link {
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #515151;
+    transition: all 0.3s ease;
+
+}
+.sitenav__link:hover {
+    color: #295091;
+    text-decoration: underline;
+}
+/*TOP-BANNER*/
+.top-banner__link {
+    display: flex;
+}
+
