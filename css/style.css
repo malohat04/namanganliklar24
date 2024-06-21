@@ -242,18 +242,28 @@ img {
     align-items: center;
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
-    background-color: #212e33;
-    background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    
     text-decoration: none;
     transition: box-shadow 0.3s ease;
 
 }
 
 .telegram-sub:hover {
+   
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+.telegram-sub--dark{
+    color: #fff;
+    background-color: #212e33;
+    background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+}
+.telegram-sub--dark:hover {
     background-color: #37AEE2;
     background-image: linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+.telegram-sub--white{
+    background-color: #fff;
+    color: #295093;
 }
 
 .telegram-sub__img {
@@ -315,6 +325,9 @@ img {
     padding: 18px;
     background-color: #295093;
     color: #fff;
+}
+.site-footer *:focus {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
 }
 .site-footer_top {
     display: flex;
