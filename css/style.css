@@ -11,7 +11,9 @@
 /*9. TELEGRAM-SUB*/
 /*10. SITENAV*/
 /*11. TOP-BANNER*/
-/*12. KEYFREMES*/
+/* SITE-FOOTER*/
+/* MEDIA QUERIES*/
+/* KEYFREMES*/
 
 @font-face {
     font-family: "Rubik";
@@ -308,6 +310,28 @@ img {
     display: flex;
 }
 
+/*SITE-FOOTER*/
+.site-footer {
+    padding: 18px;
+    background-color: #295093;
+    color: #fff;
+}
+.site-footer_top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.site-footer__logo {
+    display: flex;
+    padding: 10px;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #133C82;
+}
+.site-footer__sub-text {
+    margen: 0;
+    margin-right: 17px;
+}
 /*MEDIA QUERIES*/
 @media(max-width:1000px) {
     .site-header {

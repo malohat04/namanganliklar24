@@ -1,11 +1,26 @@
-const menuButton = document.querySelector(".site-header__toggler");
+var ready =function(cb) {
+    //Check if the 'document' is loaded completely 
+    document.readyState ==="loading"
+    ? document. addEventListener("DOMContentLoaded", function (e) {
+       cb();
+    })
+    :  cb();
+};
 
-const sitenav = document.querySelector(".sitenav")
+//Usage
+ready(function() {
+ //Toggler sitenav on site-header__toggler click
+  var elSiteHeaderToggler = document.querySelector('.site-header__toggler');
+  var elSitenav =document.querySelector('.sitenav');
 
-menuButton.addEventListener("click", ()=> {
-    if(sitenav.classList.contains("sitenav--open")) {
-        sitenav.classList.remove("sitenav--open")
-    } else {
-        sitenav.classList.add("sitenav--open")
-    }
-})
+  elSiteHeaderToggler.addEventListener('click',function () {
+    elSitenav.classList.toggle('sitenav--open');
+  });
+
+  elSitenav.addEventListener('animationend', function (){
+    console.log('tugadi');
+  });
+
+});   
+
+    
