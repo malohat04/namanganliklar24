@@ -101,12 +101,33 @@
 
   <!-- MAIN-CONTENT-->
    <main class="main-content">
-    <div class="site_header">
+    <div class="container">
 
       <!-- COVID-INFO-->
        <section class="covid-info">
         <h2 class="covid-info__heading">Коронавирус COVID-19 в Узбекистане</h2>
-        ul.covid-info__stats
+        <ul class="covid-info__stats-list">
+          <li class="covid-info__stat covid-info__stat-title--infected">
+            <div>
+              <h3 class="covid-info__stat-title covid-info__stat-title--red">Инфицированы</h3>
+              <b class="covid-info__stat-value">2753</b>
+            </div>
+          </li>
+        
+          <li class="covid-info__stat covid-info__stat-title--recovered">
+            <div>
+              <h3 class="covid-info__stat-title covid-info__stat-title--green">Выздоровели</h3>
+              <b class="covid-info__stat-value">2245</b>
+            </div>
+          </li>
+          
+          <li class="covid-info__stat covid-info__stat-title--dead">
+            <div>
+              <h3 class="covid-info__stat-title">Умерли</h3>
+              <b class="covid-info__stat-value">12</b>
+            </div>
+          </li>
+        </ul>
        </section>
 
     </div>
