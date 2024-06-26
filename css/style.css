@@ -504,6 +504,7 @@ img {
 .notifications__button {
     padding: 8px 12px;
     border: none;
+    margin-left: 1px;
     border-radius: 5px;
     font-size: 20px;
     line-height: 24px;
@@ -511,9 +512,16 @@ img {
     background-color: #FE5C28; 
     background-image: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
     color: #fff;
-    cursor:pointer
+    white-space: nowrap;
+    cursor:pointer;
+    transition: box-shadow 0.3s ease;
 }
-
+.notifications__button:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+.notifications__button:focus {
+    box-shadow: 0 0 0 4px rgba(255, 139, 54, 0.5);
+}
 
 
 /*SITE-FOOTER*/
@@ -678,6 +686,30 @@ img {
         margin-top: 3px;
         margin-bottom: 3px;
     }
+    .notifications {
+      padding: 20px;
+    }
+    .notifications::before {
+        display: none;
+    }
+    .notifications__heading {
+        margin-left: 0;
+    }
+    .notifications__heading,
+    .notifications__button {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .site-footer__about,
+    .site-footer__nav {
+        width: 100%;
+    }
+    .site-footer__about {
+        order: 1;
+    }
+    .site-footer__nav {
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -754,16 +786,7 @@ img {
         text-align: end;
         padding: 10px 0;
     }
-    .site-footer__about,
-    .site-footer__nav {
-        width: 100%;
-    }
-    .site-footer__about {
-        order: 1;
-    }
-    .site-footer__nav {
-        margin: 20px;
-    }
+    
 
     .sitenav__item:not(:last-child) {
         border-bottom: 2px solid #515151;
@@ -822,6 +845,21 @@ img {
 
 }
 
+@media (max-width: 635px) {
+    .notifications {
+        flex-wrap: wrap;
+    }
+    .notifications__heading {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .notifications__button {
+        width: 100%;
+        text-align: center;
+    } 
+}
+
 @media (max-width: 550px) { 
     .covid-info::before {
         margin-right: 0;
@@ -840,6 +878,11 @@ img {
 
     .sitenav {
         width: 80%;
+    }
+    .notifications__heading,
+    .notifications__button {
+        font-size: 15px;
+        line-height: 18px;
     }
     .site-footer__top {
         /* flex-direction: column; */
