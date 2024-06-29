@@ -326,7 +326,9 @@ img {
 
 }
 
-.sitenav__link:hover {
+.sitenav__link:hover,
+.sitenav__item--ative, 
+.sitenav__link {
     color: #295091;
     text-decoration: underline;
 }
