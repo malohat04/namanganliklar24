@@ -785,6 +785,36 @@ img {
  .sidebar-banner__img {
     display: block;
  }
+ /*SITE-APP*/
+ .site-app {
+    display: flex;
+    align-items: center;
+    padding: 65px 20px 65px 245px;
+    background: #F6F6F9 url("../img/Group\ 1.png") no-repeat left 20px bottom;
+ }
+ .site-app__body {
+    width: 526px;
+    margin-right: auto;
+ }
+ .site-app__heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 500;
+    color:#295093 ;
+ }
+ .site-app__text {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #333333;
+ }
+ .sit-app__link {
+    display: flex;
+    border-radius: 5px;
+    margin-left: 20px;
+ }
 
 /*SITE-FOOTER*/
 .site-footer {
@@ -899,6 +929,20 @@ img {
          font-size: 16px;
     }
 }
+@media(max-width:1200px) {
+    .site-app {
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+     .site-app__body {
+        width: 100%;
+    }
+    .sit-app__link {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
 @media(max-width:1150px) {
     .covid-info__heading {
         margin-right: 40px;
@@ -970,6 +1014,10 @@ img {
     .popular-news-banner {
         width: 100%;
     }
+    .sitebar-banner__img {
+        width: 100%;
+        height: auto;
+    }
 }
 @media(max-width:850px) {
     .site-header__top {
@@ -1006,6 +1054,20 @@ img {
     .notifications__heading,
     .notifications__button {
         font-size: 17px;
+        line-height: 20px;
+    }
+    .site-app {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 180px;
+        background-size: 150px;
+    }
+    .site-app__heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .site-app__text {
+        font-size: 16px;
         line-height: 20px;
     }
 
@@ -1136,6 +1198,10 @@ img {
     .covid-info__stat:not(:last-child) {
         border-bottom: 2px solid #F4CCD1;
     }
+    .site-app {
+        padding: 30px;
+        background-image: none;
+    }
 
     .site-footer {
         margin-top: 80px;
@@ -1172,6 +1238,7 @@ img {
         width: 100%;
         text-align: center;
     }
+
 }
 
 @media (max-width: 550px) {
@@ -1205,10 +1272,7 @@ img {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .sitebar-banner__img {
-        width: 100%;
-        height: auto;
-    }
+    
 }
 
 @media (max-width: 500px) {
@@ -1247,6 +1311,16 @@ img {
 
     .site-footer__nav-item {
         width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .site-app {
+        justify-content: space-around;
+    }
+    .site-app__link {
+        min-width: 45%;
+        margin: 0;
     }
 }
 
